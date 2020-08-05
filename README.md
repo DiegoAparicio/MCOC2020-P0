@@ -7,11 +7,12 @@ Primer repositorio Métodos Computacionales en Obras Civiles
   - Memoria RAM : 16 Gb DDR4 2667 MHz
   - Disco SSHD (hibrido) 1tb disco duro y 0.8 gb disco solido
   - Tarjeta de video NVIDIA GeForce GTX 1050
-Marca/modelo: TUF Gaming FX505GD
+  
+  - Marca/modelo: TUF Gaming FX505GD
 
-Tipo: Notebook
+  - Tipo: Notebook
 
-Año adquisición: 2019
+  - Año adquisición: 2019
 
 Procesador:
 
