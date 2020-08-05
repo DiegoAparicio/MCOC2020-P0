@@ -1,8 +1,28 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Aug  3 20:29:02 2020
+Spyder Editor
 
-@author: 56977
+This is a temporary script file.
 """
 
-print ("Hola Mundo!")
+nombre = "MCOC"
+dia = 3
+
+print("Forma 1")
+print("hola MCOC es el 3 de Agosto")
+
+
+print("Forma 2")
+print("hola " + nombre + " es el " + str(dia) + " de Agosto")
+
+print("Forma 3")
+print("hola {nombre} es el {dia} de Agosto".format(dia=dia, nombre=nombre))
+
+print("Forma 4")
+print(f"hola {nombre} es el {dia} de Agosto")
+
+print("Ejemplo 2 - Forma 1")
+print("hola hola hola hola hola hola hola")
+
+print("Ejemplo 2 - Forma 1")
+print("hola "*100)
