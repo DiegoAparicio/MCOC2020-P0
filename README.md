@@ -14,16 +14,16 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 
   - Año adquisición: 2019
 
-Procesador:
+  - Procesador:
 
-Marca/Modelo: CPU Intel(R) Core(TM) i7-8750H
-Velocidad Base: 2.21 GHz
-Velocidad Máxima: 2.21 GHz
-Numero de núcleos: 6
-Humero de hilos: 12
-Arquitectura: x86_64
-Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
-Tamaño de las cachés del procesador
+	Marca/Modelo: CPU Intel(R) Core(TM) i7-8750H
+	Velocidad Base: 2.21 GHz
+	Velocidad Máxima: 2.21 GHz
+	Numero de núcleos: 6
+	Humero de hilos: 12
+	Arquitectura: x86_64
+	Set de instrucciones: Intel SSE4.1, Intel SSE4.2, Intel AVX2
+- Tamaño de las cachés del procesador
 
 
 L1: 384KB
