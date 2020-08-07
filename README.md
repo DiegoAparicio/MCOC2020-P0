@@ -85,7 +85,8 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 - ¿Qué versión de numpy está usando?
 	- Actualmente estoy utilizando Numpy 1.18.5
 - Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar.
-	- 
+	- ![image](https://user-images.githubusercontent.com/43451947/89662339-f0d44980-d8a1-11ea-849a-a8fcbb0778e5.png)
+	- Como se puede ver en la imagen, no se alcanza a ocupar mas de un procesador, sino que ocupa al rededor del 80% de este cuando se realiza una corrida.
 
 
 
