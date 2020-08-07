@@ -80,6 +80,8 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 - ¿A qué se pueden deber las diferencias?
 	- Las diferencias se pueden deber a distintos factores, principalmente los componentes del computador, como el procesador y la memoria RAM, ya que a medida que aumentan las dimensiones de la matriz, la multiplicacion de estas se hace mas dificil, lo que necesita mas rendimiento del computador.
 	- Otros factores que podrian afectar es la cantidad de programas que tenemos abiertos en el computador, ya que utilizan mas memoria, lo que podria afectar el rendimiento.
+- El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
+	- Esto se debe a que a medida que aumenta el tamaño de la matriz, aumentan los datos dentro de ella, y siendo que 1 dato pesa 8 bytes, a medida que aumentan, aumentan la cantidad de bytes con respecto a la formula: 3x(N^2)x8, siendo N el tamaño de la matriz, por lo que aumenta linealmente. Siendo el caso contrario para el tiempo transcurrido, ya que esto al depender del rendimiento del computador, no hay certeza del tiempo que se demore en realizar la operacion de multiplicar las matrices, por lo que no se puede suponer que tendra un crecimiento lineal.
 - ¿Qué versión de python está usando?
 	- Actualmente estoy utilizando Python 3.8
 - ¿Qué versión de numpy está usando?
