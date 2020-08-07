@@ -74,7 +74,7 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 
 # Desempeño MATMUL
 - Grafico resultado: 
-	- ![Alt text](relative/path/to/Grafico.png?raw=true "Title")
+	- ![image](https://user-images.githubusercontent.com/43451947/89659909-91c10580-d89e-11ea-921f-61ccb9b4b83b.png)
 
 
 
