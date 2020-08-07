@@ -74,7 +74,7 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 
 # Desempeño MATMUL
 - Grafico resultado: 
-	 ![image](https://user-images.githubusercontent.com/43451947/89659909-91c10580-d89e-11ea-921f-61ccb9b4b83b.png)
+	- ![image](https://user-images.githubusercontent.com/43451947/89659909-91c10580-d89e-11ea-921f-61ccb9b4b83b.png)
 - ¿Como difiere del gráfico del profesor/ayudante?
 	- El grafico difiere principalmente en los tiempos que toma al programa/computador realizar la multiplicación de las matrices de distinto tamaño, donde en este caso se puede ver que no difiere tanto con respecto al del profesor, por lo que probablemente tengan caracteristicas similares mi computador con el de el. Con respecto a la memoria RAM, esta no difiere, ya que esta es especifica en cuanto a la cantidad de datos de la matriz, en lo unico que difiere es que mi limite de memoria son 16 GB y el del profesor 32 GB, donde se puede apreciar que mi linea discontinua esta ligeramente mas abajo.
 - ¿A qué se pueden deber las diferencias?
