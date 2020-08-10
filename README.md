@@ -92,7 +92,7 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 
 # Desempeño MIMATMUL
 - Grafico resultado:
-
+	- ![image](https://user-images.githubusercontent.com/43451947/89808347-03e85300-db08-11ea-80c3-768346d72e56.png)
 - ¿Como difiere del gráfico del profesor/ayudante?
 
 - ¿A qué se pueden deber las diferencias?
