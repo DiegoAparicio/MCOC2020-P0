@@ -94,13 +94,16 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 - Grafico resultado:
 	- ![image](https://user-images.githubusercontent.com/43451947/89808347-03e85300-db08-11ea-80c3-768346d72e56.png)
 - ¿Como difiere del gráfico del profesor/ayudante?
-
+	- Para este grafico, nuevamente no difiere en mayor parte con el grafico propuesto por el ayudante en el foro de preguntas del proyecto, lo que quiere decir que las caracteristicas de rendimiento de los computadores deberian ser parecidas ya que les toma mas menos el mismo tiempo en realizar las operaciones para la multiplicacion de las matrices.
 - ¿A qué se pueden deber las diferencias?
-
+	- Las pequeñas diferencias que pueden haber son principalmente por el procesador de cada computador y la memoria RAM, que son los principales motivos que afectan al rendimiento de las operaciones, luego estan los procesos secundarios que tienen que ver con las tareas apartes que esta ejecutanco el computador, vale decir, si por ejemplo justo cuando corri el programa me encontraba viendo una pelicula, o realizando un streaming, afectara en el rendimiento y lo mas probable es que haga que el proceso del codigo se demore mas tiempo.
+	- Hablando de las diferencias con respecto a la entrega 2, se puede ver claramente que la funcion mimatmul demora mucho tiempo mas, esto se debe a que esta funcion lo que hace es recorrer y ademas multiplicar cada fila por cada columna de las matrices, al contrario del operador @, que es casi instantaneo, es por eso que cerca del tamaño de matriz N = 1000 se demoraba alrededor de 15 minutos, lo que es un tiempo aceptable para tomar en cuenta como limite, ya que si lo hubiera hecho para un N = 10000, lo mas probable es que se habria demorado horas en una sola corrida, siendo que eran 10 corridas.
 - El gráfico de uso de memoria es lineal con el tamaño de matriz, pero el de tiempo transcurrido no lo es ¿porqué puede ser?
-
+	- Para esta entrega con respecto a la entrega 2, se puede ver que independientemente que no sea exactamente lineal el grafico del tiempo transcurrido, se acerca mucho mas a serlo, debido a que los procesos que tiene que realizar el programa son bastante sencillos, pero a medida que aumentaba el tamaño de la matriz, eran mas datos, y al ser mas datos tomaba mas tiempo, y las irregularidades que se podrian haber generado tendrian directa relacion con las tareas secundarias que se estaban desarrollando en el computador. Esto lo pude verificar debido a que en una corrida, estaba viendo una pelicula y pude recalcar que el proceso tomo mas tiempo de lo esperado, donde claramente se pudo concluir que para un optimo rendimiento, hay que tratar de solo tener como tarea la ejecucion del codigo.
 
 - Durante la ejecución de su código ¿se utiliza más de un procesador? Muestre una imagen de su uso de procesador durante alguna corrida para confirmar.
+	- ![image](https://user-images.githubusercontent.com/43451947/89808453-28dcc600-db08-11ea-90d9-837262503234.png)
+	- Como se puede ver en la imagen se estan utilizando los 12 procesadores logicos del computador, pero a diferencia de la entrega 2 el porcentaje de uso es aproximadamente un 20% (60% menor que la entrega 2), y esto se debe a que la funcion mimatmul, es larga pero sencilla, es decir al ser un proceso de bajo nivel no necesita tanto rendimiento del computador, sino mas bien tiempo.
 
 
 
