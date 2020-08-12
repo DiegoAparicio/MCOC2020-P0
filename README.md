@@ -115,7 +115,12 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 - Desempeño de los distintos tipos de dato:
 	- Para el dtype = np.half:
 		- ![image](https://user-images.githubusercontent.com/43451947/90071478-a3057a00-dcc3-11ea-9d94-d3c4a7e6470b.png)
-
+	- Para el dtype = np.single:	
+		- ![image](https://user-images.githubusercontent.com/43451947/90071600-db0cbd00-dcc3-11ea-80a2-ea5b53de874d.png)
+	- Para el dtype = np.double:
+		- 
+	- Para el dtype = np.longdouble:
+		- 
 
 
 
