@@ -114,7 +114,7 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- np.longdouble : 128 bits (16 Bytes)
 - Desempeño de los distintos tipos de dato:
 	- Para el dtype = np.half:
-		- 
+		- ![image](https://user-images.githubusercontent.com/43451947/90071478-a3057a00-dcc3-11ea-9d94-d3c4a7e6470b.png)
 
 
 
