@@ -106,8 +106,15 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- Como se puede ver en la imagen se estan utilizando los 12 procesadores logicos del computador, pero a diferencia de la entrega 2 el porcentaje de uso es aproximadamente un 20% (60% menor que la entrega 2), y esto se debe a que la funcion mimatmul, es larga pero sencilla, es decir al ser un proceso de bajo nivel no necesita tanto rendimiento del computador, sino mas bien tiempo.
 
 
-
-
+# Desempeño INV
+- Tamaño de memoria de tipos de dato:
+	- np.half : 16 bits (2 Bytes)
+	- np.single : 32 bits (4 Bytes)
+	- np.double : 64 bits (8 Bytes)
+	- np.longdouble : 128 bits (16 Bytes)
+- Desempeño de los distintos tipos de dato:
+	- Para el dtype = np.half:
+		- 
 
 
 
