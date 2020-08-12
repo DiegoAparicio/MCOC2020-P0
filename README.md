@@ -118,7 +118,7 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- Para el dtype = np.single:	
 		- ![image](https://user-images.githubusercontent.com/43451947/90071600-db0cbd00-dcc3-11ea-80a2-ea5b53de874d.png)
 	- Para el dtype = np.double:
-		- 
+		- ![image](https://user-images.githubusercontent.com/43451947/90071851-58d0c880-dcc4-11ea-9e8a-44ba46709e3d.png)
 	- Para el dtype = np.longdouble:
 		- 
 
