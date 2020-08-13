@@ -120,8 +120,20 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- Para el dtype = np.double:
 		- ![image](https://user-images.githubusercontent.com/43451947/90071851-58d0c880-dcc4-11ea-9e8a-44ba46709e3d.png)
 	- Para el dtype = np.longdouble:
-		- 
-
+		- ![image](https://user-images.githubusercontent.com/43451947/90071929-7bfb7800-dcc4-11ea-8b5b-09526dc1cb7b.png)
+	- Como se puede ver para los casos de np.half y np.longdouble, no aparece el desempeño de numpy.inv, debido a que la inversion de matrices con numpy no se puede realizar con tipos de datos float16 ni float64, donde el tipo de dato longdouble, se comporta como un float64, pero no quiere decir que ocupe memoria 64 bits.	
+	- Hablando de la eficiencia de los distintos casos, se puede apreciar que la funcion numpy.inv, en un principio realiza la inversion de las matrices de manera mas rapida que las otras dos funciones pero a largo plazo, vale decir, con matrices de mayor tamaño la eficiencia de las otras dos funciones es mas rapida (al rededor de 10 segundos mas rapida para la matriz de 10000x10000), y frente a la comparacion entre scipy.inv False y True, en la mayoria de los casos con overwrite=False, toma ligeramente mas tiempo que con overwrite=True, es decir, que con overwrite=True seria la opcion mas eficiente para matrices de gran tamaño, supongo que por el hecho de que el overwrite reemplaza datos en vez de añadirlos (append).
+- Monitoreo de uso de memoria y procesadores:
+	- Analizando el desempeño mientras se corria el codigo, se puede concluir que en general el uso del procesador es de 20% para las matrices pequeñas (N=[2,4,...,5000]), pero cuando se enfrenta a la matriz de N=10000 el uso del procesador aumenta a un 80%.
+	- Otra observacion fue que a medida que los tipos de datos iban haciendose mas grandes, es decir, de np.half hasta np.longdouble, el tiempo que tomaba analizar la matriz de N=10000 era mayor, vale decir, como esta era la matriz con mayor cantidad de datos, al incrementar el tipo de dato lo esperado fuera que tomase mas tiempo, ya que es un dato mas "pesado", lo que se pudo verificar mediante el rendimiento de los procesadores y los graficos presentados en la seccion Desempeño, donde se puede ver que realmente tomo mas tiempo pudiendo asi, verificar la hipotesis esperada.
+- ¿Qué algoritmo de inversión cree que utiliza cada método (ver wiki)?
+	- Para el caso de numpy.linalg.inv, se utiliza la inversion de matriz mediante la matriz identidad.
+	- De la misma forma scipy.linalg.inv, utiliza la matriz identidad para invertir la matriz A.
+	- En general scipy utiliza las mismas funciones que numpy, solo que scipy es siempre compilado por el soporte BLAS/LAPACK, el que hace que los calculos lineales algebraicos sean mucho mas rapido, cosa que para numpy es opcional.
+	- Finalmente la funcion de "overwrite=True" lo que hace es ignorar valores que no aportan, lo que hace que los calculos sean mas eficientes y tomen menos tiempo.
+- ¿Como incide el paralelismo y la estructura de caché de su procesador en el desempeño en cada caso?
+	- Por lo menos mi computador al momento de correr el codigo, aprovecha el paralelismo totalmente, es decir ocupa todos los procesadores logicos para asi no forzar tanto a unos pocos solamente, y a medida que se esta llegando al limite de memoria de los caché, por lo menos en el L1=384 kB, se generan ciertos "saltos" antes de llegar, y estos saltos no son justo en el limite sino que son antes debido a que como el computador esta corriendo varios programas a la vez incluyendo Python, se ocupa esta memoria antes y asi el "cambio" de caché genera estos pequeños "saltos".
+	- Por otro lado, como numpy esta mas cerca al bajo nivel de escritura, como los procesos son mas basicos, toma mas tiempo de lo que le toma a scipy, ya que este al ser una escritura mas avanzada es mas "inteligente" por asi decirlo, lo que toma menos tiempo.
 
 
 
