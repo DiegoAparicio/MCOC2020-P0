@@ -137,7 +137,10 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 
 # Entrega6 - Desempeño de Ax = b (Parte 2)
 - A partir de los solvers resultantes se pudo llegar al siguiente grafico de performance:
-	- 
+	- ![image](https://user-images.githubusercontent.com/43451947/90346188-001b6b80-dff5-11ea-95f8-ec3ff3dcc593.png)
+	- Del cual se puede decir en primer lugar que se evaluaron matrices ascendentes laplaceanas desde tamaños N = 2, hasta N = 15000.
+	- Luego segun lo esperado la solucion del sistema Ax=b que demoro mas fue el "A_invB_inv", la cual demora mas debido a que primeramente se tiene que invertir la matriz A, para solucionar el sistema de la siguiente forma x=(A^-1)b. Con lo que el hecho de invertir la matriz toma mas tiempo que el solver en si, llegando a una resolucion del sistema con N = 15000 en un tiempo de 58,6 segundos aprox.
+ 
 
 
 
