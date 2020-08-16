@@ -135,6 +135,10 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- Por lo menos mi computador al momento de correr el codigo, aprovecha el paralelismo totalmente, es decir ocupa todos los procesadores logicos para asi no forzar tanto a unos pocos solamente, y a medida que se esta llegando al limite de memoria de los caché, por lo menos en el L1=384 kB, se generan ciertos "saltos" antes de llegar, y estos saltos no son justo en el limite sino que son antes debido a que como el computador esta corriendo varios programas a la vez incluyendo Python, se ocupa esta memoria antes y asi el "cambio" de caché genera estos pequeños "saltos".
 	- Por otro lado, como numpy esta mas cerca al bajo nivel de escritura, como los procesos son mas basicos, toma mas tiempo de lo que le toma a scipy, ya que este al ser una escritura mas avanzada es mas "inteligente" por asi decirlo, lo que toma menos tiempo.
 
+# Entrega6 - Desempeño de Ax = b (Parte 2)
+- A partir de los solvers resultantes se pudo llegar al siguiente grafico de performance:
+	- 
+
 
 
 
