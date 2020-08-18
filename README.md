@@ -140,6 +140,8 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- ![image](https://user-images.githubusercontent.com/43451947/90346188-001b6b80-dff5-11ea-95f8-ec3ff3dcc593.png)
 	- Del cual se puede decir en primer lugar que se evaluaron matrices ascendentes laplaceanas desde tamaños N = 2, hasta N = 15000.
 	- Luego segun lo esperado la solucion del sistema Ax=b que demoro mas fue el "A_invB_inv", la cual demora mas debido a que primeramente se tiene que invertir la matriz A, para solucionar el sistema de la siguiente forma x=(A^-1)b. Con lo que el hecho de invertir la matriz toma mas tiempo que el solver en si, llegando a una resolucion del sistema con N = 15000 en un tiempo de 58,6 segundos aprox.
+	- Realizando la comparacion entre spSolve con spSolve_sym, se puede apreciar que al definir la matriz simetrica, esto optimiza de cierta forma los calculos haciendo que demore menos tiempo, ya que al definirla asi, el solver solo toma la parte triangular superior para realizar las operaciones matriciales, y al tomar la parte triangular significa que ocupa menos datos y con eso es esperable que tome menos tiempo, con una diferencia de aproximadamente 0,8 segundos para la matriz de tamaño N = 10000.
+	- Finalmente la mejor opcion en esta caso fue la definida con overwrite = True, el resultado tambien fue esperado debido a que la funcion de "overwrite" lo que hace es permitir que se pueda sobreescribir informacion en este caso en la matriz A, lo que hace que la realizacion de los pasos algebraicos sean mas rapidos y asi se pueda optimizar el tiempo de resolucion del sistema.
  
 
 
