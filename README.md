@@ -145,26 +145,26 @@ Primer repositorio Métodos Computacionales en Obras Civiles
  
 # Matrices dispersas y complejidad computacional
 ## Complejidad algoritmica de MATMUL
-	- Grafico matrices llenas:
-		- ![image](https://user-images.githubusercontent.com/43451947/90794806-3dc11280-e2db-11ea-936a-25dcd7770789.png)
-	- Grafico matrices dispersas:
-		- ![image](https://user-images.githubusercontent.com/43451947/90794864-53ced300-e2db-11ea-8c35-e3b567f09231.png)
-	- Comentarios y discusiones:
-		-
+- Grafico matrices llenas:
+	- ![image](https://user-images.githubusercontent.com/43451947/90794806-3dc11280-e2db-11ea-936a-25dcd7770789.png)
+- Grafico matrices dispersas:
+	- ![image](https://user-images.githubusercontent.com/43451947/90794864-53ced300-e2db-11ea-8c35-e3b567f09231.png)
+- Comentarios y discusiones:
+	-
 ## Complejidad algorítmica de SOLVE
-	- Grafico matrices llenas:
-		- ![image](https://user-images.githubusercontent.com/43451947/90794892-60532b80-e2db-11ea-8710-2c10334258fe.png)
-	- Grafico matrices dispersas:
-		- ![image](https://user-images.githubusercontent.com/43451947/90794916-6a752a00-e2db-11ea-8349-485e70ea7614.png)
-	- Comentarios y discusiones:
-		-
+- Grafico matrices llenas:
+	- ![image](https://user-images.githubusercontent.com/43451947/90794892-60532b80-e2db-11ea-8710-2c10334258fe.png)
+- Grafico matrices dispersas:
+	- ![image](https://user-images.githubusercontent.com/43451947/90794916-6a752a00-e2db-11ea-8349-485e70ea7614.png)
+- Comentarios y discusiones:
+	-
 ## Complejidad algorítmica de INV:
-	- Grafico matrices llenas:
-		- ![image](https://user-images.githubusercontent.com/43451947/90794942-7234ce80-e2db-11ea-91b1-79cbd6e2dd94.png)
-	- Grafico matrices dispersas:
-		- ![image](https://user-images.githubusercontent.com/43451947/90794963-7c56cd00-e2db-11ea-99da-3e0129f6b7a4.png)
-	- Comentarios y discusiones:
-		-
+- Grafico matrices llenas:
+	- ![image](https://user-images.githubusercontent.com/43451947/90794942-7234ce80-e2db-11ea-91b1-79cbd6e2dd94.png)
+- Grafico matrices dispersas:
+	- ![image](https://user-images.githubusercontent.com/43451947/90794963-7c56cd00-e2db-11ea-99da-3e0129f6b7a4.png)
+- Comentarios y discusiones:
+	-
 
 
 
