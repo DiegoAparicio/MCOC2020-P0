@@ -144,21 +144,21 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- Finalmente la mejor opcion en esta caso fue la definida con overwrite = True, el resultado tambien fue esperado debido a que la funcion de "overwrite" lo que hace es permitir que se pueda sobreescribir informacion en este caso en la matriz A, lo que hace que la realizacion de los pasos algebraicos sean mas rapidos y asi se pueda optimizar el tiempo de resolucion del sistema.
  
 # Matrices dispersas y complejidad computacional
-- Complejidad algoritmica de MATMUL
+## Complejidad algoritmica de MATMUL
 	- Grafico matrices llenas:
 		- ![image](https://user-images.githubusercontent.com/43451947/90794806-3dc11280-e2db-11ea-936a-25dcd7770789.png)
 	- Grafico matrices dispersas:
 		- ![image](https://user-images.githubusercontent.com/43451947/90794864-53ced300-e2db-11ea-8c35-e3b567f09231.png)
 	- Comentarios y discusiones:
 		-
-- Complejidad algorítmica de SOLVE
+## Complejidad algorítmica de SOLVE
 	- Grafico matrices llenas:
 		- ![image](https://user-images.githubusercontent.com/43451947/90794892-60532b80-e2db-11ea-8710-2c10334258fe.png)
 	- Grafico matrices dispersas:
 		- ![image](https://user-images.githubusercontent.com/43451947/90794916-6a752a00-e2db-11ea-8349-485e70ea7614.png)
 	- Comentarios y discusiones:
 		-
-- Complejidad algorítmica de INV:
+## Complejidad algorítmica de INV:
 	- Grafico matrices llenas:
 		- ![image](https://user-images.githubusercontent.com/43451947/90794942-7234ce80-e2db-11ea-91b1-79cbd6e2dd94.png)
 	- Grafico matrices dispersas:
