@@ -143,7 +143,16 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- Realizando la comparacion entre spSolve con spSolve_sym, se puede apreciar que al definir la matriz simetrica, esto optimiza de cierta forma los calculos haciendo que demore menos tiempo, ya que al definirla asi, el solver solo toma la parte triangular superior para realizar las operaciones matriciales, y al tomar la parte triangular significa que ocupa menos datos y con eso es esperable que tome menos tiempo, con una diferencia de aproximadamente 0,8 segundos para la matriz de tamaño N = 10000.
 	- Finalmente la mejor opcion en esta caso fue la definida con overwrite = True, el resultado tambien fue esperado debido a que la funcion de "overwrite" lo que hace es permitir que se pueda sobreescribir informacion en este caso en la matriz A, lo que hace que la realizacion de los pasos algebraicos sean mas rapidos y asi se pueda optimizar el tiempo de resolucion del sistema.
  
-
+# Matrices dispersas y complejidad computacional
+- Complejidad algoritmica de MATMUL
+	- Grafico matrices llenas:
+	- Grafico matrices dispersas:
+- Complejidad algorítmica de SOLVE
+	- Grafico matrices llenas:
+	- Grafico matrices dispersas:
+- Complejidad algorítmica de INV:
+	- Grafico matrices llenas:
+	- Grafico matrices dispersas:
 
 
 
