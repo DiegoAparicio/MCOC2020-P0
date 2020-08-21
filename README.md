@@ -149,22 +149,24 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 	- ![image](https://user-images.githubusercontent.com/43451947/90794806-3dc11280-e2db-11ea-936a-25dcd7770789.png)
 - Grafico matrices dispersas:
 	- ![image](https://user-images.githubusercontent.com/43451947/90794864-53ced300-e2db-11ea-8c35-e3b567f09231.png)
-- Comentarios y discusiones:
-	-
+
 ## Complejidad algorítmica de SOLVE
 - Grafico matrices llenas:
 	- ![image](https://user-images.githubusercontent.com/43451947/90794892-60532b80-e2db-11ea-8710-2c10334258fe.png)
 - Grafico matrices dispersas:
 	- ![image](https://user-images.githubusercontent.com/43451947/90794916-6a752a00-e2db-11ea-8349-485e70ea7614.png)
-- Comentarios y discusiones:
-	-
+
 ## Complejidad algorítmica de INV:
 - Grafico matrices llenas:
 	- ![image](https://user-images.githubusercontent.com/43451947/90794942-7234ce80-e2db-11ea-91b1-79cbd6e2dd94.png)
 - Grafico matrices dispersas:
 	- ![image](https://user-images.githubusercontent.com/43451947/90794963-7c56cd00-e2db-11ea-99da-3e0129f6b7a4.png)
-- Comentarios y discusiones:
-	-
+- Para los tres casos:
+	- Se puede apreciar que las diferencias que hay entre los algoritmos de matrices llenas vs dispersas principalmente es el tiempo. Las operaciones de matrices dispersas toman mucho menos tiempo en la mayoria de los casos, esto es debido a que las matrices dispersas no toman en cuenta todos los datos como las matrices llenas, y con "todos los datos" me refiero a que por ejemplo las matrices dispersas no toman en cuenta los "0", pero si toman en cuenta la estructura de la matriz, lo que hace que baje considerablemente el tiempo de ejecucion, debido a que es mucho mas facil recorrer la matriz solo con los datos que importan, sino seria hacer "pasos de mas".
+	- En cuanto a la complejidad asintotica en primer lugar, cuando N tiende a infinito, para el ensamblado tiende al orden de O(N^2) para todos los casos, ya sean matrices dispersas o llenas, esto es debido a que como el codigo de ensamblado de matrices es casi el mismo para las llenas y dispersas, el crecimiento del tiempo de ejecucion de los ensamblajes cuando se hace crecer el "N", es del orden mencionado, esto quiere decir que por cada incremento del tamaño de la matriz, yo tengo el cuadrado del tiempo, ya que las operaciones para estos casos al ser de un orden de crecimiento de NxN, lo esperado era que la complejidad asintotica fuese de orden O(N^2), lo que fue cumplido.
+	Por otro lado, para la solucion, la complejidad asintotica de las matrices llenas tiende al orden de O(N^3), mientras que la mayoria de las matrices dispersas tienden al orden de O(N^2), esto es por lo comentado en el primer punto, que como las matrices dispersas no toman en cuenta los "0", los recorridos de la matriz al realizar operaciones algebraicas concluyen en una reduccion del orden de complejidad asintotica, ya que lo normal es que sea como las matrices llenas (de orden O(N^3)), por el hecho de que hacer calculos algebraicos ademas de recorrer las matrices, toma aun mas tiempo que simplemente ensamblarlas, es por eso que al ocupar matrices dispersas es esperado que se reduzca el orden de complejidad, ya que se reducen los datos a recorrer, y con esto el tiempo que toma el proceso algebraico. Tal como se puede ver en los graficos.
+	- El tamaño de las matrices afecta en el comportamiento de complejidad a medida que el N es bastante grande (de 8000 para arriba), ya que en un principio hay varios procesos que afectan en el tiempo de ejecucion de los procesos, ya sea la memoria RAM, la memoria de los caches, todos esos procesos secundarios que afectan al rendimiento del computador, es por eso que a medida que el N ya es bastante grande, se puede ver un comportamiento mas parejo en relacion al tiempo con la complejidad asintotica, donde se puede ver en los graficos que en ese lugar ya se comporta linealmente, no como al principio que no es tan lineal, sino que variable.
+	- En relacion a la estabilidad de las corridas, en mi caso en general fueron bastante estables, pero en ciertos casos esta estabilidad se vio afectada mas al principio, donde el N era bajo, mientras que cuando el N se tornaba mas grande, la estabilidad ya era mucho mayor, donde se puede ver en los graficos que casi no se pueden apreciar diferencias. Esto esta relacionado tal como lo dije anteriormente a los distintos procesos que tiene el computador, y como se van llenando las memorias caches al principio y todo eso, mientras que cuando se sobrepasa el limite de los cache, ya empieza a ocupar la memoria ram donde se puede apreciar la estabilidad en los N mayores.
 - Codigos ensamblajes:	
 	```
 	def matriz_laplaciana_llena(N, dtype=np.double):
@@ -189,7 +191,7 @@ Primer repositorio Métodos Computacionales en Obras Civiles
 			A[i,j] = -1
 	    return csr_matrix(A)
 	```
-
+	- Con respecto a mi eleccion de codigos de ensamblaje, se puede apreciar que son bastante parecidos, y su metodologia es simple, crear una matriz de NxN, e ir agregandole datos para confeccionar una matriz laplaciana. Mi eleccion fue esta por el hecho de que es bastante practica y se entiende la "ciencia" que hay detras, se que hay otras formas de crear matrices laplacianas que disminuyen el tiempo de ensamblaje ya que en este caso los dos ciclos "for" realentizan el rendimiento, no como la funcion "eye" para crear matrices, pero no se cual es la "ciencia" detras de esa funcion, por lo que al haberlo hecho de esta forma, y al ser simple, lo esperado era que su complejidad asintotica para los dos casos fuese del orden O(N^2) por su crecimiento de NxN, tal como se pudo concluir con los graficos mostrados anteriormente. Siendo distinta la historia cuanso de trato de "operar" con estas matrices.
 
 
 
